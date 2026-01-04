@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <style>
+            *{  /* (*) significa que todos os elementos da página vão ter determinada característica */
+                background: red; 
+                color: white;
+            }
+            li{ /* (p) ou qualquer outra coisa como h1, h2... Vão ter aquela característica */
+                background: yellow;
+                color: black;
+            }
+            
+            /* Vamos aos seletores de classe */
+            .cor{ /* Todos os atributos de classe que tiverem cor vão ser afetados */
+                background: green;
+            }
+
+            /* Seletor de ID. Não pode existir dois elementos com mesmo ID*/
+            #cor2{
+                background: blue;
+                color: white;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>Este é um conteúdo de div</div>
+        <div>E temos aqui outro elemento div.</div>
+        <span class="cor">Esse é um texto dentro de span</span>
+        <!-- Aqui a gente atribuiu ao span a classe cor, logo, tudo que estiver no span é afetado -->
+        <!-- Importante: classe > config geral -->
+        <div>
+            <ul>
+                <li id="cor2">Primeiro</li> <!--Aqui eu usei o ID, não devemos usar 2 vezes o mesmo ID-->
+                <li>Segundo</li>
+                <li>Terceiro</li>
+                <li>Quarto</li>
+                <li>Quinto</li>
+            </ul>
+        </div>
+        <p>Fim do exercício sobre seletores</p>
+    </body>
+</html>
