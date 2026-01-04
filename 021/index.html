@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <style>
+            /* Para colocar que todos os divs com classe teste atribuam a característica, use: */
+            div.teste{
+                background: red;
+            }
+            /* Se você colocar algo como div.teste.aaa  ele só vai aplicar a todos os elementos que tiverem a casse teste E aaa */
+            li,span{ /* onde , significa OU */
+                color: green;
+            }
+            /* Vai afetar os li dentro do div */
+            div li{ 
+                background: yellow;
+            }
+            div li.aaa{ /* Vai apenas para a classe aaa */
+                color: black;
+            }
+            div li#primeiro{ /* Vai influenciar apenas os elementos de lista dentro da div que contenham o ID primeiro */
+                background: pink;
+            }
+            span, div li{ /* Vai para todos os span e os elementos da lista div */
+                color: rebeccapurple;
+            }
+        </style>
+    </head>
+    <body>
+        <div>Este é um conteúdo de div</div>
+        <div>E temos aqui outro elemento div.</div>
+        <span class="cor">Esse é um texto dentro de span</span>
+        <!-- Aqui a gente atribuiu ao span a classe cor, logo, tudo que estiver no span é afetado -->
+        <!-- Importante: classe > config geral -->
+         <!-- Você pode adicionar várias classes separadas por espaços -->
+        <div>
+            <ul>
+                <li id="primeiro">Primeiro</li> <!--Aqui eu usei o ID, não devemos usar 2 vezes o mesmo ID-->
+                <li class="aaa">Segundo</li>
+                <li>Terceiro</li>
+                <li>Quarto</li>
+                <li>Quinto</li>
+            </ul>
+        </div>
+        <p>Fim do exercício sobre seletores</p>
+    </body>
+</html>
