@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+    <!--<link rel="stylesheet" href="styles.css">-->
+    <style>
+    .card {
+        background-color: #f0f0f0;
+        width: 300px;
+        padding: 40px; /* Espaço interno para o conteúdo não grudar na borda */
+        border-radius: 8px; /* Bordas arredondadas deixam o design moderno */
+        
+        /* Ativando o Flexbox para centralizar tudo verticalmente */
+        display: flex;
+        flex-direction: column; /* Itens um embaixo do outro */
+        align-items: center;    /* Centraliza na horizontal */
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra leve */
+        margin: 50px auto;
+        transition: 0.2s;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+    }
+
+    /* Removendo as bolinhas da lista */
+    .card ul {
+        list-style: none;
+        padding: 10px;
+    }
+
+    .card li {
+        background-color: rgb(161, 161, 161);
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    .card li:hover {
+        background-color: gray;
+    }
+    
+    /* Estilo padrão do Link */
+    .card a {
+        text-decoration: none; /* Remove o sublinhado */
+        color: #007bff;
+        transition: 0.4s; /* Faz a mudança de cor ser suave, não instantânea */
+    }
+
+    /* O HOVER: Agora aplicado corretamente fora do bloco principal */
+    .card a:hover {
+        color: #ff4500; /* Muda para um laranja avermelhado ao passar o mouse */
+        text-decoration: underline;
+    }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Enzo R</h2>
+        <p>Estudante no desenvolvimento Web</p>
+        <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li>Whatsapp: <a href="#">47 9 88578211</a></li>
+        </ul>
+    </div>
+</body>
+</html>
